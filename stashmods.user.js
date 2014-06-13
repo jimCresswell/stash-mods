@@ -70,6 +70,11 @@ function main () {
 			observer.observe(document.body, {subtree: true, childList: true});
 		}
 	});
+
+	/* Hide the Trigger Build button on pull request pages because it doesn't work.  */
+	$(function() {
+		$(".triggerJenkinsBuild").hide();
+	});
 }
 
 // Run the script in the main document context, not in the userscript sandbox
