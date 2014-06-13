@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name                Stash enhancements
-// @namespace	        http://labs.ft.com
-// @description	        Adds useful features to Stash
-// @include		        http://git.svc.ft.com/*
-// @include		        http://git.svc.ft.com:8080/*
+// @namespace           http://labs.ft.com
+// @description         Adds useful features to Stash
+// @include             http://git.svc.ft.com/*
+// @include             http://git.svc.ft.com:8080/*
 // ==/UserScript==
 
 function main () {
@@ -70,10 +70,6 @@ function main () {
 			observer.observe(document.body, {subtree: true, childList: true});
 		}
 	});
-
-
-
-
 }
 
 // Run the script in the main document context, not in the userscript sandbox
